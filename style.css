@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body, html{
+    background-image: url(../img/background.jpg);
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    display:contents;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#quiz-window{
+    width: 410px;
+    padding: 35px;
+    border-radius: 100px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+#setup div{
+    margin: 10px 0;
+}
+
+#setup label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+#category, #amount, #difficulty{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+    background: #fff;
+}
+
+#start-btn{
+    padding: 12px 25px;
+    background-color: #198686;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#start-btn:hover{
+    background-color: #bf1515;
+    transform: scale(1.05);
+}
+
+#progress, #currentScore, #highScore{
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+}
+
+#question{
+    font-size: 1em;
+    margin: 20px 0;
+    color: #000000;
+}
+
+.answer-btn{
+    width: calc(100% - 20px);
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    background-color: #1c1917;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease;
+}
+
+.answer-btn:hover{
+    transform: scale(1.05);
+}
+
+.answer-btn:disabled, .answer-btn.correct, .answer-btn.incorrect{
+    cursor: default;
+    transform: none;
+}
+
+#result{
+    font-size: 1em;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.correct{
+    background-color: #4caf50 !important;
+}
+
+.incorrect{
+    background-color:  #bf1515 !important;
+}
+
+button{
+    padding: 12px 15px;
+    background-color: #198686;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover{
+    background-color:  #bf1515;
+    transform: scale(1.05);
+}
+
